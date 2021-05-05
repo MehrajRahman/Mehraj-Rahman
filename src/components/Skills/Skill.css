@@ -1,0 +1,22 @@
+.skill-list{
+    list-style: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.589);
+    margin: 10px;
+    border-radius: 10px;
+}
+.skill-container{
+    padding: 20px 10px ;
+    background: rgba(0, 0, 32, 0.877);
+}
+.skill-container2{
+    padding: 20px 10px ;
+    background: rgba(24, 146, 130, 0.877);
+}
+.skill-container h2{
+    color: white;
+    padding: 10px 0;
+}
+.skill-container h3{
+    color: rgb(192, 228, 225);
+}

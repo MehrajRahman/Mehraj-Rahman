@@ -1,0 +1,31 @@
+.about{
+    background: linear-gradient(45deg, rgba(5, 0, 31, 0.384) ,rgba(8, 0, 29, 0.425)), url('../../images/bgAbout.jpg');
+    color: black;
+    min-height: 600px;
+    padding-top: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text-about{
+    color: rgb(8, 243, 251);
+}
+.about-text{
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+    background: rgba(250, 247, 247, 0.685);
+    box-shadow: 2px 2px 2px #111;
+}
+.about-text h2{
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    color: #002233;
+    border-left: 3px solid rgb(8, 243, 251);
+   
+}
+.about-text p{
+    color: #111;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

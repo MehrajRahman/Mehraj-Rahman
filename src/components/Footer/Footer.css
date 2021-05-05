@@ -1,0 +1,38 @@
+.footer{
+    min-height: 400px;
+    background: rgb(1, 135, 139);
+    
+    border-radius: 40% 40% 0% 0%/ 10% 10% 10% 10%;
+}
+.footer h1{
+    color: rgb(3, 0, 26);
+}
+.footer h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #00ff7f;
+}
+ul li{
+    list-style: none;
+}
+h2{
+    color: white;
+}
+ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: start;
+}
+.icon{
+    border: 1px solid white;
+    color: #111;
+    background: white;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+.icon:hover{
+    background: lightseagreen;
+    color: white;
+    
+    border: 1px solid lightseagreen;
+}

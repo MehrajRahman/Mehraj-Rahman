@@ -1,0 +1,62 @@
+.svg {
+    width: 350px;
+  }
+.home{
+  height: 100vh;
+  padding-top: 150px;
+  background:rgb(0, 5, 27);
+}
+.home-tag{
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  border-right: 5px solid rgb(8, 243, 251);
+}
+.tag-line{
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  border-bottom:5px solid rgb(8, 243, 251) ;
+}
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+.main-img{
+  height: 250px;
+  border-radius: 5px;
+
+}
+.img-container{
+  box-sizing: content-box;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  
+}
+.overlay {
+  position: absolute; 
+ 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.overlay-bottom{
+  width: 100%;
+  bottom: 0;
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+

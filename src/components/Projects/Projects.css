@@ -1,0 +1,251 @@
+
+
+.our-story{
+    background:rgb(6, 0, 26) ;
+  }
+  
+  .timeline{
+    width: 100%;
+  }
+  .timeline ul {
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40% 40% 40% 40%/ 10% 10% 10% 10%;
+  }
+  
+  
+  
+  span{
+      color: black;
+  }
+  .timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: rgb(8, 243, 251);
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+    border: 5px solid #f2f2f2;
+  }
+  
+  .timeline ul li .event-box-grid{
+    position: relative;
+    bottom: 0;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    background: #F4F4F2;
+    border-radius: 5px;
+    
+    box-shadow: 1px 1px solid #1a1a1a;
+    
+  }
+  .event-box-grid div img{
+    display: block;
+    width: 50%;
+    height: 20%;
+    margin: 10px auto;
+  }
+  
+  
+  
+  
+  
+  .timeline ul li:nth-child(odd) .event-box-grid {
+    left: 45px;
+    border-right: 6px solid #00b856;
+    z-index: 0;
+    box-shadow:  0px 2px 5px  #1a1a1a;
+   
+   
+  }
+  .timeline ul li:nth-child(odd) .event-box-grid::after {
+    position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 0 0 0 5px;
+      top: 90%;
+      right:100%;
+      margin-right: -10px;
+      content: '';
+      transform: rotate(135deg);
+      margin-top: -10px;
+      background: #f2f2f2;
+      z-index: -1;
+      box-shadow: 1px 1px #111;
+  }
+  .live-site-link{
+    color: #00a04b;
+    font-size: 24px;
+    margin:0 20px;
+
+    
+  }
+  .timeline ul li:nth-child(odd) .event-box-grid::before {
+   left: -15px;
+    /*border-width: 8px 16px 8px 0;
+    border-color: transparent  #1B2631 transparent transparent;*/
+    box-shadow: 1px  #1a1a1a;
+    
+  }
+  
+  .timeline ul li:nth-child(even) .event-box-grid {
+    left: -540px;
+    border-left: 6px solid #ff6d12;
+    box-shadow: 2px 2px 5px  #1a1a1a;
+    z-index: 0;
+  }
+  
+  .timeline ul li:nth-child(even) .event-box-grid::before {
+    right: -15px;
+    /*border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent  #1B2631;*/
+    box-shadow: 1px #1a1a1a;
+  }
+  /*TRIAL FOE A NEW ERA*/
+  .timeline ul li:nth-child(even) .event-box-grid::after {
+    position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 0 0 5px 0;
+      top: 90%;
+      left :100%;
+      margin-left: -10px;
+      content: '';
+      transform: rotate(-45deg);
+      margin-top: -10px;
+      background: #f2f2f2;
+      z-index: -1;
+      /*border-bottom: 2px solid #1a1a1a67;
+      border-right: 2px solid #1a1a1a67;*/
+      box-shadow: 1px 1px  #1a1a1a;
+  }
+  /*END OF THE ERA
+  */
+  
+  time {
+    display: block;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 8px auto ;
+    color: #00a04b;
+    text-align: center;
+  }
+  p{
+    color: #1a1a1a;
+    text-align: center;
+    font-weight: 500;
+    
+  }
+  
+  
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  .timeline ul li::after {
+    transition: background .5s ease-in-out;
+  }
+  
+  .timeline ul li:nth-child(even).in-view::after {
+    background:  #E86110;
+  }
+  .timeline ul li:nth-child(odd).in-view::after {
+    background:  #00a04b;
+  }
+  
+  .timeline ul li .event-box-grid {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+  
+  .timeline ul li:nth-child(odd) .event-box-grid {
+    transform: translate3d(200px, 0, 0);
+  }
+  
+  .timeline ul li:nth-child(even) .event-box-grid {
+    transform: translate3d(-200px, 0, 0);
+  }
+  
+  .timeline ul li.in-view .event-box-grid {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  @media screen and (max-width: 900px) {
+    .timeline ul li .event-box-grid {
+      width: 250px;
+    }
+    .timeline ul li:nth-child(even) .event-box-grid{
+      left: -289px;
+      /*250+45-6*/
+    }
+  }
+  
+  @media screen and ( max-width: 600px) {
+    .timeline ul li {
+      margin-left: 20px;
+    }
+    .timeline ul li .event-box-grid {
+      width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-child(even) .event-box-grid {
+      left: 45px;
+      /*border: 0px 6px 0px 0px solid #ff6d12;*/
+      border-left: none;
+      border-right: 6px solid #ff6d12;
+    }/*
+    .timeline ul li:nth-child(even) .event-box-grid::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent  #00a04b transparent transparent;
+    }*/
+    /*HELLO HELLO MEDIA */
+    
+  
+  
+  .timeline ul li:nth-child(even) .event-box-grid::before {
+    left: -15px;
+    /*border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent  #1B2631;*/
+    box-shadow: 1px #1a1a1a;
+  }
+  /*TRIAL FOE A NEW ERA*/
+  .timeline ul li:nth-child(even) .event-box-grid::after {
+    position: absolute;
+    left:0%;
+    right: none;
+    margin-right: -10px;
+    margin-left: none;
+    transform: rotate(135deg);
+    margin-top: -10px;
+   
+    
+  }
+  }
+  /*END OF 
+  OUR STORY PART*/
+  
